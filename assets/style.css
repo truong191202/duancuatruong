@@ -1,0 +1,444 @@
+html {
+    font-size: 62.5%;
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(217, 100%, 97%)
+}
+
+body {
+    -webkit-user-select: none;  /* webkit (safari, chrome) browsers */
+    -moz-user-select: none;     /* mozilla browsers */
+    -ms-user-select: none;      /* internet explorer */
+    user-select: none;          /* general browser */
+ }
+
+/* Javascript */
+.circle.active{
+    background-color: #fff;
+}
+
+.circle.active .number{
+    color: inherit;
+}
+
+.change{
+    display: none;
+}
+
+
+/* Main */
+
+.container{
+    width: 100%;
+    padding-top: 100px;
+}
+
+.content{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 614px;
+}
+
+.main-content{
+    padding-top: 30px;
+    margin-left: 15px;
+    display: flex;
+    position: relative;
+}
+
+.main-content .left{
+    height: 574px;
+    width: 268px;
+    background-image:  url(./images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.info{
+    margin-bottom: 30px;
+}
+
+/* Step */
+.step{
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+.step-summary{
+    display: flex;
+    margin-top: 30px;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: white;
+}
+
+.step .number{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+.step .step-summary:first-child{
+    margin-top: 0px;
+}
+
+/* Step Step-info */
+
+.step .step-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step-info .step-number{
+    font-size: 14px;
+    color:hsl(231, 11%, 63%)
+}
+
+.step-info .step-text{
+    font-size: 15px;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%)
+}
+
+
+/* Right */
+
+.right{
+    margin-left: 30px;
+}
+
+/* Right Right-content */
+
+.right-content{
+    padding-top: 40px;
+    margin-left: 120px;
+}
+
+.right-content .info .title{
+    font-size: 35px;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+}
+
+.right-content .info .sub-title{
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 500;
+    color:hsl(231, 11%, 63%);
+}
+
+.right-content .form-object{
+    margin-top: 20px;
+}
+
+
+form{
+    margin: 0 auto auto 0;
+}
+
+.right-content .form-object:first-child{
+    margin-top: 0px;
+}
+
+.right-content label{
+    font-size: 15px;
+}
+
+.right-content .error-more{
+    color:red;
+}
+
+.right-content form input{
+    width: 430px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.right-content #fname{
+    margin-top: 0;
+}
+
+/* button next step */
+
+.main-content button{
+    width: 122px;
+    height: 50px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(213, 82%, 34%);
+    cursor: pointer;
+}
+.main-content .next button{
+    right: 142px;
+    bottom: 30px;
+}
+
+.main-content .back button{
+    right: 443px;
+    bottom: 30px;
+    display: none;
+}
+
+/* Step 2 - Change 1 */
+
+
+.error{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+/* Select plan - Change 2 */
+
+
+.select-plan .row1{
+    display: flex;
+}
+
+.select-plan .plan-information{
+    height: 150px;
+    width: 130px;
+    margin-right: 30px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #808080;
+}
+
+.select-plan .plan-information img{
+    padding: 15px 0 0 15px;
+}
+
+.plan-information .plan-text{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.plan-information .plan-text p{
+    color: #808080;
+    font-size: 12px;
+}
+
+.plan-information .plan-text .price-change{
+    font-size: 20px;
+    color: red;
+}
+
+.plan-information .plan-text p:nth-child(3){
+    margin-top: 5px;
+    color: blue;
+}
+
+.plan-information .plan-text p:first-child{
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(213, 96%, 18%);
+}
+
+.plan-information.active{
+    border-color: #A46DFF;
+    background-color: hsl(217, 100%, 97%);
+}
+
+.plan-information:hover{
+    border-color: #A46DFF;
+    cursor: pointer;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 100%, 97%);
+    width: 450px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.row2 .option-button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 30px;
+    height: 15px;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 20px;
+    transition: 2s ease;
+    cursor: pointer;
+    margin: 0 20px 0 20px;
+}
+
+.option-button.active{
+    justify-content: end;
+}
+
+.row2 .circle-option{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.row2 p{
+    font-weight: 700;
+    font-size: 15px;
+    color: #808080;
+    ;
+}
+
+.text.active p{
+    color: hsl(213, 96%, 18%);
+}
+
+/* Select addons - Change 3 */
+
+
+.addon {
+    height: 100px;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #808080;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.addon input{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.select-addons .addon-name{
+    margin-left: 20px;
+    min-width: 220px;
+}
+
+.select-addons .addon-price{
+    margin-left: 80px;
+}
+
+.select-addons .addon-name p{
+    color:hsl(231, 11%, 63%);
+    line-height: 20px;
+}
+
+.select-addons .addon-name p:first-child{
+    color:hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+.select-addons .addon-price p{
+    color:#A46DFF;
+}
+
+.addon.active{
+    border-color:#A46DFF;
+    background-color: hsl(217, 100%, 97%);
+}
+
+.addon:hover{
+    border-color:#A46DFF;
+    background-color: hsl(217, 100%, 97%);
+}
+
+.addon{
+    margin-top: 10px;
+}
+
+/* Finish - Change 4 */
+
+
+.finish .row .plan-block{
+    display: none;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+.finish .row .plan-block.active{
+    display: flex;
+}
+
+.finish .row .addons-block {
+    display: none;
+    justify-content: space-between;
+}
+
+.finish .row .addons-block.active{
+    display: flex;
+}
+
+.finish .row:first-child{
+    margin-top: 0;
+}
+
+.finish .final-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish p{
+    font-size: 15px;
+}
+
+.final-row p{
+    font-size: 25px;
+    font-weight: 700;
+    color: blue;
+}
+
+.addons-block{
+    margin-top: 20px;
+}
+
+.final-row{
+    margin-top: 50px;
+}
+
+/* Thank - Change 5 */
+
+
+.thank{
+    margin-top: 50px;
+    margin-left: -60px;
+    text-align: center;
+}
+
+.thank p:nth-child(2){
+    font-size: 30px;
+    font-weight: 700;
+    color: blue;
+    line-height: 50px;
+}
+
+.thank p:nth-child(3){
+    font-size: 20px;
+}
+
+/* Change chung */
+.change.active{
+    display: block;
+}

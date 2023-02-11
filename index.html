@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<title>Frontend Mentor | Multi-step form</title>
+
+		
+	</head>
+	<body>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="main-content">
+            <div class="left">
+              <div class="step">
+                <div class="step-summary">
+                  <div class="circle active"><div class="number"><p>1</p></div></div>
+                  <div class="step-info">
+                    <div class="step-number"><p>STEP 1</p></div>
+                    <div class="step-text"><p>YOUR INFO</p></div>
+                  </div>
+                </div>
+                <div class="step-summary">
+                  <div class="circle"><div class="number"><p>2</p></div></div>
+                  <div class="step-info">
+                    <div class="step-number"><p>STEP 2</p></div>
+                    <div class="step-text"><p>SELECT PLAN</p></div>
+                  </div>
+                </div>
+                <div class="step-summary">
+                  <div class="circle"><div class="number"><p>3</p></div></div>
+                  <div class="step-info">
+                    <div class="step-number"><p>STEP 3</p></div>
+                    <div class="step-text"><p>ADD-ONS</p></div>
+                  </div>
+                </div>
+                <div class="step-summary">
+                  <div class="circle"><div class="number"><p>4</p></div></div>
+                  <div class="step-info">
+                    <div class="step-number"><p>STEP 4</p></div>
+                    <div class="step-text"><p>SUMMARY</p></div>
+                  </div>
+                </div>
+                <div class="step-summary"></div>
+                <div class="step-summary"></div>
+                <div class="step-summary"></div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="right-content">
+                <!-- <div class="info">
+                  <p class="title">Personal info</p>
+                  <p class="sub-title">Please provide your name, email address, and phone number.</p>
+                </div> -->
+                <div class="content-change">
+                  <div class = "change active">
+                    <div class="info">
+                      <p class="title">Personal info</p>
+                      <p class="sub-title">Please provide your name, email address, and phone number.</p>
+                    </div>
+                    <form action="">
+                      <div class="form-object">
+                        <div class="error"><label for="fname">Name</label><div class="error-more"></div></div><br>
+                        <input type="text" name="fname" id="fname" placeholder="e.g: Vanessa Mint">
+                      </div>
+                      <div class="form-object">
+                        <div class="error"><label for="email">Email Address</label><div class="error-more"></div></div><br>
+                        <input type="text" name="email" id="email" placeholder="e.g: vanessamint@gmail.com">
+                      </div>
+                      <div class="form-object">
+                        <div class="error"><label for="phone-number">Phone Number</label><div class="error-more"></div></div><br>
+                        <input type="text" name="phone-number" id="phone-number" placeholder="e.g: +1 234 567 890">
+                      </div>
+                    </form>
+                  </div >
+                  <div class="select-plan change">
+                    <div class="info">
+                      <p class="title">Select Your Plan</p>
+                      <p class="sub-title">You have the option of monthly or yearling billing</p>
+                    </div>
+                    <div class="row1">
+                      <div class="plan-information active">
+                        <img src="./assets/images/icon-arcade.svg" alt="">
+                        <div class = "plan-text">
+                          <p>Arcade</p>
+                          <p class="price-change">$9/mo</p>
+                          <p class="month-free-2"></p>
+                        </div>
+                      </div>
+                      <div class="plan-information">
+                        <img src="./assets/images/icon-advanced.svg" alt="">
+                        <div class = "plan-text">
+                          <p>Advanced</p>
+                          <p class="price-change">$12/mo</p>
+                          <p class="month-free-2"></p>
+                        </div>
+                      </div>
+                      <div class="plan-information">
+                        <img src="./assets/images/icon-pro.svg" alt="">
+                        <div class = "plan-text">
+                          <p>Pro</p>
+                          <p class="price-change">$15/mo</p>
+                          <p class="month-free-2"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row2">
+                      <div class="text active"><p>Monthly</p></div>
+                      <div class="option-button"><div class="circle-option"></div></div>
+                      <div class="text"><p>Year</p></div>
+                    </div>
+                  </div>
+                  <div class="select-addons change">
+                    <div class="info">
+                      <p class="title">Pick Add-ons</p>
+                      <p class="sub-title">Add-ons help enhance your gaming experience.</p>
+                    </div>
+                    <label for="addon-check1"><div class="addon">
+                      <input type="checkbox" name="" id="addon-check1">
+                      <div class="addon-name">
+                        <p>Online service</p>
+                        <p>Access to multiplayer games</p>
+                      </div>
+                      <div class="addon-price"><p>+$1/mo</p></div>
+                    </div></label>
+                    <label for="addon-check2"><div class="addon">
+                      <input type="checkbox" name="" id="addon-check2">
+                      <div class="addon-name">
+                        <p>Larger Storage</p>
+                        <p>Extra 1TB of cloud save</p>
+                      </div>
+                      <div class="addon-price"><p>+$2/mo</p></div>
+                    </div></label>
+                    <label for="addon-check3"><div class="addon">
+                      <input type="checkbox" name="" id="addon-check3">
+                      <div class="addon-name">
+                        <p>Customizable Profile</p>
+                        <p>Custom theme on your profile</p>
+                      </div>
+                      <div class="addon-price"><p>+$2/mo</p></div>
+                    </div></label>
+                  </div>
+                  <div class="finish change">
+                    <div class="info">
+                      <p class="title">Finishing up</p>
+                      <p class="sub-title">Double-check everything looks OK before confirming.</p>
+                    </div>
+                    <div class="row">
+                      <div class="plan-block active">
+                        <div class="row-content"><p>Arcade(<span>Monthly</span>)</p></div>
+                        <div class="row-price"><p>$9/mo</p></div>
+                      </div>
+                      <div class="plan-block">
+                        <div class="row-content"><p>Advanced(<span>Monthly</span>)</p></div>
+                        <div class="row-price"><p>$12/mo</p></div>
+                      </div>
+                      <div class="plan-block">
+                        <div class="row-content"><p>Pro(<span>Monthly</span>)</p></div>
+                        <div class="row-price"><p>$15/mo</p></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="addons-block">
+                        <div class="row-content"><p>Online Service</p></div>
+                        <div class="row-price"><p>+$1/mo</p></div>
+                      </div>
+                      <div class="addons-block">
+                        <div class="row-content"><p>Larger Storage</p></div>
+                        <div class="row-price"><p>+$2/mo</p></div>
+                      </div>
+                      <div class="addons-block">
+                        <div class="row-content"><p>Customizable Profile</p></div>
+                        <div class="row-price"><p>+$2/mo</p></div>
+                      </div>
+                    </div>
+                    <div class="final-row">
+                      <div class="row-content"><p>Total(per month)</p></div>
+                      <div class="row-price"><p></p></div>
+                    </div>
+                  </div>
+                  <div class="thank change">
+                    <img src="./assets/images/icon-thank-you.svg" alt="">
+                    <p>Thank you!</p>
+                    <p>Thanks for confirming your subscription! We hope you have<br/>fun using our platform. If you ever need support
+                    please feel<br/> free to email us at support@loremgaming.com.</p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+              <div class="back">
+                <button>Back</button>
+              </div>
+              <div class="next">
+                <button>Next Step</button>
+              </div>
+            
+          </div >
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+	</body>
+</html>
